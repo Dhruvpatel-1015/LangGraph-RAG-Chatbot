@@ -52,9 +52,8 @@ LangGraph-RAG-Chatbot/
 ├── assets/
 │   └── Screenshots/
 │
-├── app.py
-├── backend.py
-├── test_api.py
+├── Streamlit_Frontend.py
+├── Langgraph_backend.py
 │
 ├── requirements.txt
 ├── README.md

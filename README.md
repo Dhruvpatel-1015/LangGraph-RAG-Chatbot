@@ -1,6 +1,6 @@
 # 🤖 LangGraph RAG Chatbot
 
-A production-ready **Retrieval-Augmented Generation (RAG)** chatbot built using **LangGraph**, **LangChain**, **OpenAI GPT-4o**, **FAISS**, and **Streamlit**.
+A production-ready **Retrieval-Augmented Generation (RAG)** chatbot built using **LangGraph**, **LangChain**, **Google Gemini 2.5 Flash**, **FAISS**, and **Streamlit**.
 
 The chatbot allows users to upload PDF documents, ask natural language questions, retrieve context from the uploaded document, perform web searches, fetch live stock prices, and execute mathematical calculations—all within a single conversational interface.
 
@@ -23,19 +23,26 @@ The chatbot allows users to upload PDF documents, ask natural language questions
 
 # Tech Stack
 
-| Category | Technology |
-|-----------|------------|
-| LLM | OpenAI GPT-4o |
-| Agent Framework | LangGraph |
-| Orchestration | LangChain |
-| Vector Database | FAISS |
-| Embeddings | OpenAI Embeddings |
-| UI | Streamlit |
-| PDF Parsing | PyPDF |
-| Web Search | DuckDuckGo Search |
-| Programming Language | Python |
+| Category             | Technology              |
+| -------------------- | ----------------------- |
+| LLM                  | Google Gemini 2.5 Flash |
+| Embeddings           | Gemini Embedding 001    |
+| Agent Framework      | LangGraph               |
+| Orchestration        | LangChain               |
+| Vector Database      | FAISS                   |
+| UI                   | Streamlit               |
+| PDF Parsing          | PyPDF                   |
+| Web Search           | DuckDuckGo Search       |
+| Programming Language | Python                  |
+
 
 ---
+
+## Workflow
+
+<p align="center">
+  <img src="assets/Workflow.png" width="900">
+</p>
 
 # Project Structure
 
@@ -175,7 +182,7 @@ Previous conversations are stored using LangGraph thread memory.
         │             │              │
         └─────────────┼──────────────┘
                       ▼
-                 GPT-4o Response
+                 Gemini 2.5 Flash
 ```
 
 ---
